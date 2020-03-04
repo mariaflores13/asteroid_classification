@@ -39,6 +39,7 @@ Name | Description | Data Type
 `class                      ` |   |  `        object`
 `first_obs                  ` |   |  `datetime64[ns]`
 `last_obs                   ` |   |  `datetime64[ns]`
+`'diameter_(km)'            ` |   |  `       float64`
 
 
 
@@ -52,11 +53,6 @@ Name | Description | Data Type
 
 ### Model Evaluation
 
----
-
-### Conclusion
----
-### Recommendations
 ---
 
 ### Future Steps
