@@ -18,6 +18,28 @@ The data was obtained from [NASA's API](https://ssd.jpl.nasa.gov/sbdb_query.cgi#
 
 Name | Description | Data Type  
 -----|-------------|----------
+`full_name                  ` |   |  `        object`
+`neo                        ` |   |  `         int64`
+`hazardous                  ` |   |  `         int64`
+`epoch_cal                  ` |   |  `       float64`
+`eccentricity_(e)           ` |   |  `       float64`
+`semi_major_axis_(a)        ` |   |  `       float64`
+`perihelion_dist_(q)        ` |   |  `       float64`
+`inclination_(i)            ` |   |  `       float64`
+`perihelion_arg_(w)         ` |   |  `       float64`
+`abs_magnitude_(H)          ` |   |  `       float64`
+`mean_anomaly               ` |   |  `       float64`
+`aphelion_dist_(Q)          ` |   |  `       float64`
+`mean_motion_(n)            ` |   |  `       float64`
+`min_orbit_intersection_dist` |   |  `       float64`
+`t_jupiter                  ` |   |  `       float64`
+`asc_node_long_(deg)        ` |   |  `       float64`
+`orbital_per_(d)            ` |   |  `       float64`
+`orbital_per_(y)            ` |   |  `       float64`
+`class                      ` |   |  `        object`
+`first_obs                  ` |   |  `datetime64[ns]`
+`last_obs                   ` |   |  `datetime64[ns]`
+
 
 
 ---
