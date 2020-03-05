@@ -41,6 +41,13 @@ Name | Description | Data Type
 `last_obs                   ` |   |  `datetime64[ns]`
 `'diameter_(km)'            ` |   |  `       float64`
 
+- Eccentricity: Basically the shape of the ellipse, where values close to zero are more elongated while values closer to one are more circular.
+- Semimajor Axis: Half the length of the major axis of the orbit of the asteroid.
+- Inclination: The tilt of the orbit from the reference plane. In this case, the reference plane was the ecliptic plane where the orbits of the planets are located.
+- Longitude of the Ascending Node: The angle the orbit is rotated from the reference plane's vernal point, basically describes where the asteroid “ascends” out from the reference plane.
+- Argument of Periapsis: The orientation of the ellipse, or the angle the orbit is rotated with respect to itself.
+- Mean Anomaly: The locations of the asteroid in a certain time period.
+
 
 
 ---
@@ -62,3 +69,4 @@ Name | Description | Data Type
 - http://www.columbia.edu/~my2317/asteroidproject.html
 - https://www.permanent.com/apollo-amor-aten-near-earth-asteroids.html
 - https://ssd.jpl.nasa.gov/sbdb_query.cgi#x
+- https://www.quora.com/How-fast-do-asteroids-travel-What-is-the-average-orbital-velocity-of-an-asteroid
