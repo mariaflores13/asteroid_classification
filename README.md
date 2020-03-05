@@ -20,9 +20,9 @@ Name | Description | Data Type
 -----|-------------|----------
 `full_name                  ` |   |  `        object`
 `neo                        ` |   |  `         int64`
-`hazardous                  ` |   |  `         int64`
+`hazardous                  ` | (PHA) Potentially hazardous asteroid  |  `         int64`
 `epoch_cal                  ` |   |  `       float64`
-`eccentricity_(e)           ` |   |  `       float64`
+`eccentricity_(e)           ` |An orbital parameter describing the eccentricity of the orbit ellipse. Eccentricity `e` is the ratio of half the distance between the foci `c` to the semi-major axis `a: e=c/a`.   |  `       float64`
 `semi_major_axis_(a)        ` |   |  `       float64`
 `perihelion_dist_(q)        ` |   |  `       float64`
 `inclination_(i)            ` |   |  `       float64`
@@ -41,8 +41,18 @@ Name | Description | Data Type
 `last_obs                   ` |   |  `datetime64[ns]`
 `'diameter_(km)'            ` |   |  `       float64`
 
+
+The speed at which an asteroid will move is given by
+
+`V = 29.8 km/sec * sqrt( 2/r - 1/a)`
+
+Where r=distance from sun (radius) in astronomical units and a = semi-major axis of the orbit.
+If the orbit is circular then a=r and the equation reduces to
+
+`V = 29.8 km/sec * sqrt(1/r)`
+`
 - Eccentricity: Basically the shape of the ellipse, where values close to zero are more elongated while values closer to one are more circular.
-- Semimajor Axis: Half the length of the major axis of the orbit of the asteroid.
+- Semi-major Axis: Half the length of the major axis of the orbit of the asteroid.
 - Inclination: The tilt of the orbit from the reference plane. In this case, the reference plane was the ecliptic plane where the orbits of the planets are located.
 - Longitude of the Ascending Node: The angle the orbit is rotated from the reference plane's vernal point, basically describes where the asteroid “ascends” out from the reference plane.
 - Argument of Periapsis: The orientation of the ellipse, or the angle the orbit is rotated with respect to itself.
