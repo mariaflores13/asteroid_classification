@@ -58,6 +58,10 @@ If the orbit is circular then a=r and the equation reduces to
 - Argument of Periapsis: The orientation of the ellipse, or the angle the orbit is rotated with respect to itself.
 - Mean Anomaly: The locations of the asteroid in a certain time period.
 
+---
+### Finding Velocity
+**The shape of velocity**: [source](https://www.youtube.com/watch?time_continue=728&v=xdIjYBtnvZU&feature=emb_title)
+Although we don't know the shape of an orbit, we can find the shape traced out by the velocity vectors. As an asteroid orbits, the velocity changes and rotates tangent to the curve of the orbit (whatever it may look like). We can take the length of the velocity vectors and rotate them so that if we join them at a single point, they form a perfect circle.
 
 
 ---
@@ -80,3 +84,6 @@ If the orbit is circular then a=r and the equation reduces to
 - https://www.permanent.com/apollo-amor-aten-near-earth-asteroids.html
 - https://ssd.jpl.nasa.gov/sbdb_query.cgi#x
 - https://www.quora.com/How-fast-do-asteroids-travel-What-is-the-average-orbital-velocity-of-an-asteroid
+- https://en.wikipedia.org/wiki/Orbital_speed
+- http://www.asterank.com/3d/
+- https://en.wikipedia.org/wiki/Standard_gravitational_parameter
