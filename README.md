@@ -1,6 +1,64 @@
 
 ---
 ### Problem Statement
+1. An executive summary:
+* What is your goal?
+* Where did you get your data?
+* What are your metrics?
+* What were your findings?
+* What risks/limitations/assumptions affect these findings?
+2. Summarize your statistical analysis, including:
+* implementation
+* evaluation
+* inference
+3. Clearly document and label each section of your notebook(s)
+* Logically organize your information in a persuasive, informative manner.
+* Include notebook headers and subheaders, as well as clearly formatted markdown for all written components.
+* Include graphs/plots/visualizations with clear labels.
+* Comment and explain the purpose of each major section/subsection of your code.
+* Document your code for your future self, as if another person needed to replicate your approach.
+4. Clearly document all of your decision points in the relevant sections
+* How did you acquire your data?
+* How did you transform or engineer your data? Why?
+* How did you select your model?
+* How did you optimize hyperparameters?
+
+
+---
+
+Best Practices
+
+Organizing your repo
+* If you have multiple notebooks, start each filename with a number to assist in organization.
+* Give you notebooks descriptive filenames. For example,
+    * 1_Scraping.ipynb
+    * 2_EDA.ipynb
+    * 3_Model_Development.ipynb
+* Keep data files in a single folder off the "root" of the repo.
+* Keep documentation/reports in a dedicated folder (like data).
+* If you have any other resources (images or PDFs), keep them in a dedicated folder (called assets, for example.)
+3. Jupyter Notebooks
+* Data science is a non-linear, iterative process, but your final notebook should contain a linear "narrative."
+* Notebooks should be reproducible, which means that I will get the same results as you did if I clone your repo and run your notebook. Consider the following:
+    * Is your data stored in the repo or available via a link?
+    * If you use any (ANY) random numbers anywhere, do you have a random seed so that you always get the same result?
+    * Is your notebook 100% free of runtime errors?
+    * In short, if I open your notebook and click "Cell -> Run All", will your notebook run completely, without errors and give me the same result every time?
+
+
+
+
+
+* Your presentation should focus on summarizing your problem statement, your approach, your findings, and how it might be used in the future.
+
+* Particularly when presenting to a non-technical audience, remember that what and why can be much more interesting than how:
+  * What are you trying to predict?
+  * Why are you doing it? Who cares?
+  * What are some predictions your model has made? Where they any good?
+  * What will you use it for in the future? Are there limitations or risks?
+  * Do not use technical terms unless you can clearly and succinctly define them.
+
+
 
 ---
 ### Data
@@ -87,3 +145,4 @@ Although we don't know the shape of an orbit, we can find the shape traced out b
 - https://en.wikipedia.org/wiki/Orbital_speed
 - http://www.asterank.com/3d/
 - https://en.wikipedia.org/wiki/Standard_gravitational_parameter
+- [Asteroid Image](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/asteroids/16-psyche/in-depth/)
