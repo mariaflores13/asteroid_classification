@@ -84,18 +84,18 @@ The features with the most outliers are the jupiter tisserand parameter, mean mo
 "The Standard Gravitational Parameter μ of a celestial body is the product of the gravitational constant G and the mass M of the body." [[source]](https://en.wikipedia.org/wiki/Standard_gravitational_parameter)  
 
 **Formula:**  
-${\mu =GM}$  
+![image](./images/1.png)
 
 "The central body in an orbital system can be defined as the one whose mass (M) is much larger than the mass of the orbiting body (m). This approximation is standard for planets orbiting the Sun or most moons and greatly simplifies equations. Under Newton's law of universal gravitation, if the distance between the bodies is r, the force exerted on the smaller body is:"  
-${F={\frac {GMm}{r^{2}}}={\frac {\mu m}{r^{2}}}}$
+![image](./images/4.png)
 
 "This can be generalized for elliptic orbits:"  
-$\mu = \frac{4\pi^2a^3}{T^2}$
+![image](./images/2.png)
 
 After finding the standard gravitational constant, I can use that to finally find the velocity using the formula below.  
 
 **Formula:**  
-$v$ = $\mu\sqrt{{\frac{2}{r}}-{\frac{1}{a}}}$
+![image](./images/3.png)
 
 [[source]](https://en.wikipedia.org/wiki/Standard_gravitational_parameter)
 
