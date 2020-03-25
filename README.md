@@ -103,7 +103,7 @@ After finding the standard gravitational constant, I can use that to finally fin
 **Potentially Hazardous Asteroids Over Time**
 ![image](./images/hazardous_discovery.png)
 
-**How have PHA observations changed over time?**
+**How have PHA observations changed over time?**  
 I created two different data frame copies that use the datetime columns as the indices. The original data frame contains a `last_obs` column that states the date each observation was last observed and a `first_obs` column that states the discovery date of each observation. `df1` uses `first_obs` as the index and `last_obs` uses `df2` as the index.  
 
 The number of hazardous asteroids discovered over the last 30 years: The distribution start off with a lower count, probably because measuring tools were not as advanced, and increases significantly in the late 90's/early 2000's. The peak is in 2002 and lowers gradually until the latest discoveries in 2017.
