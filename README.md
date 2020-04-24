@@ -4,17 +4,17 @@
 Considering the possibility of an asteroid colliding into Earth, what characteristics make an asteroid hazardous? Specifically, what are an asteroid's orbital characteristics and physical characteristics and which ones have a greater influence on whether or not an asteroid is hazardous?
 
 ---
-## Background Info from NASA
+## Background
 
 Historically, stray asteroids and asteroid fragments have collided with Earth, "playing a major role in altering the geological history of the planet and in the evolution of life on Earth." [(NASA)](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/asteroids/in-depth/#many_shapes_and_sizes_otp) For this reason, scientists "continuously monitor Earth-crossing asteroids, whose paths intersect Earth's orbit, and near-Earth asteroids that approach Earth's orbital distance to within about 45 million kilometers (28 million miles) and may pose an impact danger. Radar is a valuable tool in detecting and monitoring potential impact hazards. By reflecting transmitted signals off objects, images and other information can be derived from the echoes. Scientists can learn a great deal about an asteroid's orbit, rotation, size, shape, and metal concentration." [(NASA)](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/asteroids/in-depth/#many_shapes_and_sizes_otp)
 
-**Near-Earth Objects (NEOs)**
-"Near-Earth Objects (NEOs) are comets and asteroids that have been nudged by the gravitational attraction of nearby planets into orbits that allow them to enter the Earth’s neighborhood. Composed mostly of water ice with embedded dust particles, comets originally formed in the cold outer planetary system while most of the rocky asteroids formed in the warmer inner solar system between the orbits of Mars and Jupiter. The scientific interest in comets and asteroids is due largely to their status as the relatively unchanged remnant debris from the solar system formation process some 4.6 billion years ago...[T]oday’s asteroids are the bits and pieces left over from the initial agglomeration of the inner planets that include Mercury, Venus, Earth, and Mars." [[source]](https://cneos.jpl.nasa.gov/about/basics.html)
+**Near-Earth Objects (NEOs)**  
+"Near-Earth Objects (NEOs) are comets and asteroids that have been nudged by the gravitational attraction of nearby planets into orbits that allow them to enter the Earth’s neighborhood. Composed mostly of water ice with embedded dust particles, comets originally formed in the cold outer planetary system while most of the rocky asteroids formed in the warmer inner solar system between the orbits of Mars and Jupiter. The scientific interest in comets and asteroids is due largely to their status as the relatively unchanged remnant debris from the solar system formation process some 4.6 billion years ago." [[source]](https://cneos.jpl.nasa.gov/about/basics.html)
 
-**(Near-Earth Asteroids (NEAs)**
+**(Near-Earth Asteroids (NEAs)**  
 "The vast majority of NEOs are asteroids, referred to as Near-Earth Asteroids (NEAs). NEAs are divided into groups (Atira, Aten, Apollo and Amor) according to their perihelion distance (q), aphelion distance (Q) and their semi-major axes (a)." [source]
 
-**Potentially Hazardous Asteroids (PHAs)**
+**Potentially Hazardous Asteroids (PHAs)**  
 "Potentially Hazardous Asteroids (PHAs) are currently defined based on parameters that measure the asteroid's potential to make threatening close approaches to the Earth. Specifically, all asteroids with an Earth Minimum Orbit Intersection Distance (MOID) of 0.05 au or less and an absolute magnitude (H) of 22.0 or less are considered PHAs."
 Historically, stray asteroids and asteroid fragments have collided with Earth, "playing a major role in altering the geological history of the planet and in the evolution of life on Earth." (NASA) For this reason, scientists "continuously monitor Earth-crossing asteroids, whose paths intersect Earth's orbit, and near-Earth asteroids that approach Earth's orbital distance to within about 45 million kilometers (28 million miles) and may pose an impact danger. Radar is a valuable tool in detecting and monitoring potential impact hazards. By reflecting transmitted signals off objects, images and other information can be derived from the echoes. Scientists can learn a great deal about an asteroid's orbit, rotation, size, shape, and metal concentration." (NASA)
 
@@ -22,13 +22,9 @@ Historically, stray asteroids and asteroid fragments have collided with Earth, "
 ## Data
 Using the [JPL Small-Body Database Search Engine](https://ssd.jpl.nasa.gov/sbdb_query.cgi#x) I was able to generate a custom table of orbital and physical parameters for asteroids. I specified search constraints like object type/group, orbit class, and object characteristics as well as output fields like orbital parameters.
 
-**Note:** All distance units are in astronomical units unless otherwise specified.
-
+**Note:** All distance units are in astronomical units unless noted otherwise.
 
 #### Data Dictionary
-[source](https://ssd.jpl.nasa.gov/?glossary&term=phase_a
-)  
-
 
 Name | Description | Data Type  
 -----|-------------|----------
