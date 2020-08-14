@@ -1,4 +1,4 @@
-
+## Asteroid Classification
 ---
 ## Problem Statement
 Considering the possibility of an asteroid colliding into Earth, what characteristics make an asteroid hazardous? Specifically, what are an asteroid's orbital characteristics and physical characteristics and which ones have a greater influence on whether or not an asteroid is hazardous?
