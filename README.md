@@ -71,7 +71,7 @@ The asteroid orbital classes in the data are IEO (Atiras), ATE (Aten), AMO (Amor
 [[Source]](https://cneos.jpl.nasa.gov/about/neo_groups.html)
 
 **Box Plot Interpretation**  
-The features with the most outliers are the jupiter tisserand parameter, mean motion, epoch, inclination, and the orbital classes. Eventhough it is clear there are many outliers in a vast number of features, I am deciding to keep them because I don't expect all the data to be normally distributed and am also considering the fact that many of these recordings are estimations or derived from non-direct measurements. In addition, I need all the observations I have since the dataset is small and the classes are unbalanced.
+The features with the most outliers are the jupiter tisserand parameter, mean motion, epoch, inclination, and the orbital classes. Eventhough it is clear there are many outliers in a vast number of features, I am deciding to keep them because I don't expect all the data to be normally distributed and am also considering the fact that many of these recordings are estimations or derived from non-direct measurements. In addition, I need all the observations I have since the dataset is small and the classes are imbalanced.
 
 **Feature Engineering: Finding Standard Gravitational Parameter to Calculate Velocity**  
 
@@ -108,7 +108,7 @@ The number of hazardous asteroids discovered over the last 30 years: The distrib
 ### Modeling
 I tried a KNN Model, Logistic Regression Model, Support Vector Classifier, .Bagging Classifier, and Random Forest Classifier. Random Forest received the best accuracy score of 99.7%.
 
-**Unbalanced Classes**  
+**Imbalanced Classes**  
 ![image](./images/class_count.png)
 
 **Baseline Accuracy**  
@@ -120,16 +120,16 @@ Random Forest Classifier vs. Logistic Regression.
 **Model Evaluation**
 ![here](./images/dist_outcome1.png)
 
-While all of the models performed very well, the baseline score was 74% to begin with because the classes were highly unbalanced. All models performed better than the baseline, but the one that performed the best is Random Forest Classifier with 99.7% accuracy. Although Logistic Regression scored a 97.6% accuracy, which is about 2% lower than the Random Forest Classifier model, I would choose Logistic Regression over RFC because of the interpretability tradeoff. When graphing the features for the RFC model, the features "min orbit intersection distance" and "absolute magnitude" carry most of the weight of the predictions and not much else can be said about the rest of the features. For LogReg, we can we how likely it for an asteroid to be hazardous given a 1 unit increase in a feature.
+While all of the models performed very well, the baseline score was 74% to begin with because the classes were highly imbalanced. All models performed better than the baseline, but the one that performed the best is Random Forest Classifier with 99.7% accuracy. Although Logistic Regression scored a 97.6% accuracy, which is about 2% lower than the Random Forest Classifier model, I would choose Logistic Regression over RFC because of the interpretability tradeoff. When graphing the features for the RFC model, the features "min orbit intersection distance" and "absolute magnitude" carry most of the weight of the predictions and not much else can be said about the rest of the features. For LogReg, we can we how likely it for an asteroid to be hazardous given a 1 unit increase in a feature.
 
 ---
 ### Conclusion
-Asteroids orbital features are fascinating, but it was unfortunate that the target class was highly unbalanced because it takes meaning away from the accuracy of the model. According to the best model, most influential feature is the distance from the orbit of intersection, which was obvious from the beginning. The collecting more data would be ideal, but we can't create more hazardous asteroids than are in existence – and ideally, we would want there to be none. I could do more research on other features that can be influential that were not included in this dataset and gather more data that way.
+Asteroids orbital features are fascinating, but it was unfortunate that the target class was highly imbalanced because it takes meaning away from the accuracy of the model. According to the best model, most influential feature is the distance from the orbit of intersection, which was obvious from the beginning. The collecting more data would be ideal, but we can't create more hazardous asteroids than are in existence – and ideally, we would want there to be none. I could do more research on other features that can be influential that were not included in this dataset and gather more data that way.
 
 ---
 
 ### Limitations & Future Steps
-As I mentioned before, the challenge was the fact that the classes were so unbalanced because it devalued the model.
+As I mentioned before, the challenge was the fact that the classes were so imbalanced because it devalued the model.
 
 I would like to contribute to NASA's already existing Deflection App or try to recreate something like that on my own (for learning purposes only). The app looks at questions like:
 - How much velocity change is required to make the asteroid miss the Earth?
