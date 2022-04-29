@@ -66,12 +66,12 @@ The `name` and `full_name` columns are neither quantitative nor qualitative feat
 
 I analyzed datatypes and converting inaccurate ones or 'dummifying' categorical ones. There are two date columns that appear as objects so I am converting those to pandas datetime types. `Neo` is also listed as an object type so I will assign 1 to observations that are NEO's and 1 to those that are not NEO's. NEO's (Near Earth Objects), in terms of orbital elements, are asteroids with perihelion distance less than 1.3 au [[source]](https://cneos.jpl.nasa.gov/about/neo_groups.html). The target label: `hazardous` is also listed as an object type, so I am assigning a 1 to non-hazardous asteroids and a 1 to potentially hazardous asteroids.
 
-**Dummying Categorical Features**  
+**Categorical Features**  
 The asteroid orbital classes in the data are IEO (Atiras), ATE (Aten), AMO (Amor), and APO (Apollo). All four orbital classes contain hazardous and non-hazardous asteroid observations. IEOs are NEAs "whose orbits are contained entirely with the orbit of the Earth (named after asteroid 163693 Atira)." IEO is the class with the least observations for both hazardous and non-hazardous asteroids. ATEs are "Earth-crossing NEAs with semi-major axes smaller than Earth's (named after asteroid 2062 Aten)." AMOs are "Earth-approaching NEAs with orbits exterior to Earth's but interior to Mars' (named after asteroid 1221 Amor)." APOs are "Earth-crossing NEAs with semi-major axes larger than Earth's (named after asteroid 1862 Apollo)." While the majority of the observations are from the AMO class, only 3% of those are considered hazardous asteroids.
 [[Source]](https://cneos.jpl.nasa.gov/about/neo_groups.html)
 
 **Box Plot Interpretation**  
-The features with the most outliers are the jupiter tisserand parameter, mean motion, epoch, inclination, and the orbital classes. Eventhough it is clear there are many outliers in a vast number of features, I am deciding to keep them because I don't expect all the data to be normally distributed and am also considering the fact that many of these recordings are estimations or derived from non-direct measurements. In addition, I need all the observations I have since the dataset is small and the classes are imbalanced.
+The features with the most outliers are the jupiter tisserand parameter, mean motion, epoch, inclination, and the orbital classes. Even though it is clear there are many outliers in a vast number of features, I am deciding to keep them because I don't expect all the data to be normally distributed and am also considering the fact that many of these recordings are estimations or derived from non-direct measurements. In addition, I need all the observations I have since the dataset is small and the classes are imbalanced.
 
 **Feature Engineering: Finding Standard Gravitational Parameter to Calculate Velocity**  
 
